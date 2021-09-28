@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <style>
+        table {
+            text-align: center;
+        }
+        input[type=checkbox]:checked+div {
+            height: 300px;
+        }
+        div {
+            text-align: left;
+            overflow: hidden;
+            width: 720px;
+            height: 0px;
+            transition-duration: 1s;
+        }
+        #check1 {
+            display: none
+        }
+        #check2 {
+            display: none
+        }
+        th {
+            background-color: darkgray;
+        }
+        label {
+            color: darkturquoise;
+        }
+        h3{
+            color: darkgreen;
+        }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="https://getbootstrap.com/docs/4.5">
+            <img src="https://getbootstrap.com/docs/4.5/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="" loading="lazy">
+          </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <span class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">처음으로<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://namu.wiki">나무위키</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                검색사이트
+              </a>
+              <span class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="https://google.com">Google</a>
+                <a class="dropdown-item" href="https://naver.com">Naver</a>
+                <span class="dropdown-divider"></span>
+                <a class="dropdown-item" href="https://daum.net">Daum</a>
+              </span>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">검색</button>
+          </form>
+        </span>
+      </nav>
+      <center>
+          <br><br><br>
+        <table border="1">
+                <h1>기본정보</h1>
+            <thead>
+                <tr>
+                    <th>이름</th>
+                    <th>나이</th>
+                    <th>성별</th>
+                    <th>학력</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>박재형</td>
+                    <td>29</td>
+                    <td>남</td>
+                    <td>초대졸</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <h1>경력, 자격</h1>
+        <label for="check1">경력</label>
+        <input id="check1" type="checkbox">
+        <div>
+            <h1>경력</h1>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <td rowspan="4">경력사항</td>
+                        <th>근무기간</th>
+                        <th>근무부서</th>
+                        <th>담당업무</th>
+                        <th>직위</th>
+                    </tr>
+                    <tr>
+                        <td>2015-04-01 ~ 2016-05-01</td>
+                        <td>생산</td>
+                        <td>오퍼레이터</td>
+                        <td>비정규</td>
+                    </tr>
+                    <tr>
+                        <td>2016-07-01 ~ 2019-04-01</td>
+                        <td>물류</td>
+                        <td>물류이동</td>
+                        <td>사원</td>
+                    </tr>
+                    <tr>
+                        <td>2021-01-01 ~ 2021-02-01</td>
+                        <td>식품</td>
+                        <td>상품진열</td>
+                        <td>기간직</td>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+        <br>
+        <label for="check2">자격증</label>
+        <input id="check2" type="checkbox">
+        <div>
+            <h1>자격증</h1>
+            <ul>
+                <li>지원관련 자격증</li>
+                <ul>
+                    <li>컴퓨터 활용능력 1급</li>
+                    <li>오토캐드 2급</li>
+                </ul>
+                <br>
+                <li>일반 자격증</li>
+                <ul>
+                    <li>운전면허 1종보통</li>
+                    <li>지게차 운전기능사</li>
+                </ul>
+            </ul>
+        </div>
+        <br></center>
+        <hr>
+            <h1><a id="home1">자기소개</a></h1>
+            <a href="#AAA">지원동기</a>
+            <a href="#BBB">성장과정</a>
+            <a href="#CCC">특기사항</a>
+            <a href="#DDD">기타사항</a>
+            <h3><a id="AAA" href="#home1">1.</a>지원동기</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio quibusdam iure aliquid atque saepe dolore est, aliquam natus veritatis quasi? Cum aperiam necessitatibus hic dolore! Adipisci, voluptate ullam? Enim rem vero voluptas. Impedit molestiae suscipit dicta, nobis ut aliquid laboriosam totam culpa eum recusandae ab aliquam odit quae quidem excepturi voluptatibus cumque ea minus laborum reiciendis facere ullam neque, alias harum. Cupiditate nisi voluptas, quod minima in deserunt corporis aut nostrum. Voluptatem, ullam. Earum voluptatem suscipit distinctio doloribus, nemo repudiandae nisi nihil, laborum quae unde cupiditate magnam maxime, perferendis quidem accusantium tempore fugiat reiciendis modi sequi. Explicabo recusandae, totam sit porro praesentium saepe eaque rem laudantium voluptatem, facere sed aliquid consequatur voluptate nemo sint consectetur autem pariatur quod quaerat sequi at minima aperiam. Accusantium quia eaque dicta, cupiditate sequi similique beatae sit nulla natus alias cum voluptates maxime sunt inventore perspiciatis qui sapiente non aperiam labore amet numquam asperiores harum. Vitae deserunt animi vero eligendi saepe! Commodi, esse voluptatum non aliquid possimus quae velit, necessitatibus magni laborum amet totam illo error autem ab aperiam architecto sunt molestias! Ea voluptatum veritatis praesentium cum ullam similique veniam architecto cupiditate! Similique fugit nesciunt accusamus in! Modi maiores expedita error reprehenderit omnis enim praesentium consequatur impedit magnam fugiat atque, voluptatum ex totam velit minima? Quibusdam molestiae architecto debitis voluptates cupiditate, consequatur illum est! Dolor similique laborum assumenda, non pariatur voluptates ut magni, nostrum dignissimos quae nobis voluptatum debitis fugit. Ipsam repudiandae deleniti repellendus, non ut esse dolor, quod iusto praesentium commodi sit? Fuga eaque laborum ducimus possimus perferendis animi dolore, accusamus commodi illo corporis, culpa natus recusandae aut voluptatum iusto beatae sint similique adipisci laudantium facere. Officiis architecto sapiente vel ullam laboriosam, voluptas iste nisi repellendus animi! Tempora beatae, fuga eaque illum cumque doloremque in. Delectus veniam voluptate tempora maiores ea commodi eveniet? Quia?</p>
+            <h3><a id="BBB" href="#home1">2.</a>성장과정</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio quibusdam iure aliquid atque saepe dolore est, aliquam natus veritatis quasi? Cum aperiam necessitatibus hic dolore! Adipisci, voluptate ullam? Enim rem vero voluptas. Impedit molestiae suscipit dicta, nobis ut aliquid laboriosam totam culpa eum recusandae ab aliquam odit quae quidem excepturi voluptatibus cumque ea minus laborum reiciendis facere ullam neque, alias harum. Cupiditate nisi voluptas, quod minima in deserunt corporis aut nostrum. Voluptatem, ullam. Earum voluptatem suscipit distinctio doloribus, nemo repudiandae nisi nihil, laborum quae unde cupiditate magnam maxime, perferendis quidem accusantium tempore fugiat reiciendis modi sequi. Explicabo recusandae, totam sit porro praesentium saepe eaque rem laudantium voluptatem, facere sed aliquid consequatur voluptate nemo sint consectetur autem pariatur quod quaerat sequi at minima aperiam. Accusantium quia eaque dicta, cupiditate sequi similique beatae sit nulla natus alias cum voluptates maxime sunt inventore perspiciatis qui sapiente non aperiam labore amet numquam asperiores harum. Vitae deserunt animi vero eligendi saepe! Commodi, esse voluptatum non aliquid possimus quae velit, necessitatibus magni laborum amet totam illo error autem ab aperiam architecto sunt molestias! Ea voluptatum veritatis praesentium cum ullam similique veniam architecto cupiditate! Similique fugit nesciunt accusamus in! Modi maiores expedita error reprehenderit omnis enim praesentium consequatur impedit magnam fugiat atque, voluptatum ex totam velit minima? Quibusdam molestiae architecto debitis voluptates cupiditate, consequatur illum est! Dolor similique laborum assumenda, non pariatur voluptates ut magni, nostrum dignissimos quae nobis voluptatum debitis fugit. Ipsam repudiandae deleniti repellendus, non ut esse dolor, quod iusto praesentium commodi sit? Fuga eaque laborum ducimus possimus perferendis animi dolore, accusamus commodi illo corporis, culpa natus recusandae aut voluptatum iusto beatae sint similique adipisci laudantium facere. Officiis architecto sapiente vel ullam laboriosam, voluptas iste nisi repellendus animi! Tempora beatae, fuga eaque illum cumque doloremque in. Delectus veniam voluptate tempora maiores ea commodi eveniet? Quia?</p>
+            <h3><a id="CCC" href="#home1">3.</a>특기사항</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio quibusdam iure aliquid atque saepe dolore est, aliquam natus veritatis quasi? Cum aperiam necessitatibus hic dolore! Adipisci, voluptate ullam? Enim rem vero voluptas. Impedit molestiae suscipit dicta, nobis ut aliquid laboriosam totam culpa eum recusandae ab aliquam odit quae quidem excepturi voluptatibus cumque ea minus laborum reiciendis facere ullam neque, alias harum. Cupiditate nisi voluptas, quod minima in deserunt corporis aut nostrum. Voluptatem, ullam. Earum voluptatem suscipit distinctio doloribus, nemo repudiandae nisi nihil, laborum quae unde cupiditate magnam maxime, perferendis quidem accusantium tempore fugiat reiciendis modi sequi. Explicabo recusandae, totam sit porro praesentium saepe eaque rem laudantium voluptatem, facere sed aliquid consequatur voluptate nemo sint consectetur autem pariatur quod quaerat sequi at minima aperiam. Accusantium quia eaque dicta, cupiditate sequi similique beatae sit nulla natus alias cum voluptates maxime sunt inventore perspiciatis qui sapiente non aperiam labore amet numquam asperiores harum. Vitae deserunt animi vero eligendi saepe! Commodi, esse voluptatum non aliquid possimus quae velit, necessitatibus magni laborum amet totam illo error autem ab aperiam architecto sunt molestias! Ea voluptatum veritatis praesentium cum ullam similique veniam architecto cupiditate! Similique fugit nesciunt accusamus in! Modi maiores expedita error reprehenderit omnis enim praesentium consequatur impedit magnam fugiat atque, voluptatum ex totam velit minima? Quibusdam molestiae architecto debitis voluptates cupiditate, consequatur illum est! Dolor similique laborum assumenda, non pariatur voluptates ut magni, nostrum dignissimos quae nobis voluptatum debitis fugit. Ipsam repudiandae deleniti repellendus, non ut esse dolor, quod iusto praesentium commodi sit? Fuga eaque laborum ducimus possimus perferendis animi dolore, accusamus commodi illo corporis, culpa natus recusandae aut voluptatum iusto beatae sint similique adipisci laudantium facere. Officiis architecto sapiente vel ullam laboriosam, voluptas iste nisi repellendus animi! Tempora beatae, fuga eaque illum cumque doloremque in. Delectus veniam voluptate tempora maiores ea commodi eveniet? Quia?</p>
+            <h3><a id="DDD" href="#home1">4.</a>기타사항</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio quibusdam iure aliquid atque saepe dolore est, aliquam natus veritatis quasi? Cum aperiam necessitatibus hic dolore! Adipisci, voluptate ullam? Enim rem vero voluptas. Impedit molestiae suscipit dicta, nobis ut aliquid laboriosam totam culpa eum recusandae ab aliquam odit quae quidem excepturi voluptatibus cumque ea minus laborum reiciendis facere ullam neque, alias harum. Cupiditate nisi voluptas, quod minima in deserunt corporis aut nostrum. Voluptatem, ullam. Earum voluptatem suscipit distinctio doloribus, nemo repudiandae nisi nihil, laborum quae unde cupiditate magnam maxime, perferendis quidem accusantium tempore fugiat reiciendis modi sequi. Explicabo recusandae, totam sit porro praesentium saepe eaque rem laudantium voluptatem, facere sed aliquid consequatur voluptate nemo sint consectetur autem pariatur quod quaerat sequi at minima aperiam. Accusantium quia eaque dicta, cupiditate sequi similique beatae sit nulla natus alias cum voluptates maxime sunt inventore perspiciatis qui sapiente non aperiam labore amet numquam asperiores harum. Vitae deserunt animi vero eligendi saepe! Commodi, esse voluptatum non aliquid possimus quae velit, necessitatibus magni laborum amet totam illo error autem ab aperiam architecto sunt molestias! Ea voluptatum veritatis praesentium cum ullam similique veniam architecto cupiditate! Similique fugit nesciunt accusamus in! Modi maiores expedita error reprehenderit omnis enim praesentium consequatur impedit magnam fugiat atque, voluptatum ex totam velit minima? Quibusdam molestiae architecto debitis voluptates cupiditate, consequatur illum est! Dolor similique laborum assumenda, non pariatur voluptates ut magni, nostrum dignissimos quae nobis voluptatum debitis fugit. Ipsam repudiandae deleniti repellendus, non ut esse dolor, quod iusto praesentium commodi sit? Fuga eaque laborum ducimus possimus perferendis animi dolore, accusamus commodi illo corporis, culpa natus recusandae aut voluptatum iusto beatae sint similique adipisci laudantium facere. Officiis architecto sapiente vel ullam laboriosam, voluptas iste nisi repellendus animi! Tempora beatae, fuga eaque illum cumque doloremque in. Delectus veniam voluptate tempora maiores ea commodi eveniet? Quia?</p>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+  </body>
+</html>
